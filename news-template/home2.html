@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — SaaS & Digital Agency Starter</title>
+  <meta name="description" content="Modular SaaS-focused landing page variant with subscription CTAs, feature matrices, and proof tailored for software teams.">
+  <link rel="canonical" href="https://www.example.com/home2.html">
+  <meta property="og:title" content="News — Service Experts for Modern Businesses">
+  <meta property="og:description" content="Flexible services template with light/dark modes, RTL support, and Tailwind-powered layouts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/index.html">
+  <link rel="icon" href="assets/icons/logo-mark.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#4f46e5',
+              light: '#818cf8'
+            },
+            accent: {
+              DEFAULT: '#0ea5e9'
+            }
+          },
+          fontFamily: {
+            heading: ['"Inter Tight"', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-slate-950/90">
+    <div class="container relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="flex items-center gap-2 text-lg font-semibold uppercase tracking-widest text-brand">
+        <img src="assets/icons/logo-mark.svg" alt="News logo mark" class="h-8 w-8">
+        News
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium uppercase tracking-wide md:flex">
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="blog.html">Insights</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="rounded-full bg-brand px-4 py-2 text-white shadow hover:bg-brand-light" href="pricing.html">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="toggle-btn">
+          <span class="sr-only">Toggle theme</span>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.42 1.42M7.05 16.95l-1.42 1.42m12.02 0-1.42-1.42M7.05 7.05 5.63 5.63" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+        </button>
+        <button id="mobileToggle" class="ml-1 inline-flex items-center rounded-full border border-slate-200 p-2 text-sm font-semibold md:hidden dark:border-white/10">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="absolute right-4 top-full hidden w-64 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl dark:border-white/10 dark:bg-slate-900 md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-semibold uppercase tracking-wide">
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Insights</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="rounded-full bg-brand px-4 py-2 text-center text-white" href="pricing.html">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 py-20 text-white">
+      <div class="container mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center rtl-flip">
+        <div class="space-y-6 text-center lg:text-left">
+          <p class="inline-flex items-center rounded-full border border-white/30 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em]">SaaS launch partner</p>
+          <h1 class="font-heading text-4xl font-bold leading-tight md:text-5xl">Recurring revenue starts with a product story customers feel.</h1>
+          <p class="text-base text-white/70">Pair marketing pages and in-app onboarding with shared content blocks. Switch to RTL or dark mode without touching a build system.</p>
+          <div class="flex flex-wrap justify-center gap-4 lg:justify-start">
+            <a href="register.html" class="rounded-full bg-white px-6 py-3 font-semibold text-slate-900 shadow-lg shadow-black/30">Start free workspace</a>
+            <a href="pricing.html" class="rounded-full border border-white/40 px-6 py-3 font-semibold text-white/90">Compare plans</a>
+          </div>
+          <dl class="grid grid-cols-2 gap-6 text-left text-lg font-semibold text-white/90 sm:grid-cols-4">
+            <div><dt class="text-3xl">14</dt><dd class="text-xs uppercase tracking-widest text-white/70">Automation recipes</dd></div>
+            <div><dt class="text-3xl">24/7</dt><dd class="text-xs uppercase tracking-widest text-white/70">Ops support</dd></div>
+            <div><dt class="text-3xl">45%</dt><dd class="text-xs uppercase tracking-widest text-white/70">Faster activation</dd></div>
+            <div><dt class="text-3xl">∞</dt><dd class="text-xs uppercase tracking-widest text-white/70">Scalable layouts</dd></div>
+          </dl>
+        </div>
+        <div class="relative w-full max-w-xl rounded-[32px] border border-white/10 bg-white/5 p-6 shadow-2xl">
+          <div class="rounded-2xl bg-white/90 p-6 text-slate-900 dark:bg-slate-900 dark:text-white">
+            <p class="text-xs uppercase tracking-[0.4em] text-brand">Live metrics</p>
+            <p class="mt-2 text-4xl font-bold">MRR $148k</p>
+            <div class="mt-6 space-y-3 text-sm">
+              <div class="flex items-center justify-between"><span>Churn</span><span class="font-semibold text-emerald-500">-1.2%</span></div>
+              <div class="flex items-center justify-between"><span>Activation</span><span class="font-semibold text-brand-light">76%</span></div>
+              <div class="flex items-center justify-between"><span>Tickets</span><span class="font-semibold text-amber-400">Low</span></div>
+            </div>
+          </div>
+          <p class="mt-6 text-sm text-white/70">“فريقنا الدولي يطلق تحديثات أسبوعية بدون تعطيل المناطق المختلفة.”</p>
+        </div>
+      </div>
+    </section>
+    <section class="py-20">
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="mb-12 flex flex-col gap-4 text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-brand">Platform advantages</p>
+          <h2 class="font-heading text-3xl font-bold">Unify your marketing site and product onboarding</h2>
+          <p class="text-slate-500">Reusable sections, pricing toggles, and admin-ready dashboards included. Just plug data and publish.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="card">
+            <h3 class="card-title">Growth experiments</h3>
+            <p>Segment hero CTAs per visitor intent and test via the built-in toggle controls.</p>
+            <span class="badge">Audience SLAs</span>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Product education</h3>
+            <p>Embed feature walkthroughs using pure HTML + Tailwind utilities. No React build required.</p>
+            <span class="badge">Docs-ready</span>
+          </article>
+          <article class="card">
+            <h3 class="card-title">RevOps toolkit</h3>
+            <p>Admin dashboard pages map to CRM objects so your ops team can plug in data fast.</p>
+            <span class="badge">Ops sync</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-50 py-16 dark:bg-slate-900">
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div>
+            <h2 class="font-heading text-2xl font-bold">Compare deployment options</h2>
+            <p class="mt-2 text-slate-500">Pick the right velocity for your team. Extend with Tailwind CLI or keep CDN for prototyping.</p>
+            <div class="mt-6 overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10">
+              <table class="w-full text-left text-sm">
+                <thead class="bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-white/70">
+                  <tr>
+                    <th class="px-4 py-3">Capability</th>
+                    <th class="px-4 py-3">Studio</th>
+                    <th class="px-4 py-3">In-house</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-t border-slate-100 dark:border-white/10">
+                    <td class="px-4 py-3">Launch time</td>
+                    <td class="px-4 py-3">10 days</td>
+                    <td class="px-4 py-3">4-6 weeks</td>
+                  </tr>
+                  <tr class="border-t border-slate-100 dark:border-white/10">
+                    <td class="px-4 py-3">Custom analytics</td>
+                    <td class="px-4 py-3">Included</td>
+                    <td class="px-4 py-3">Add-on</td>
+                  </tr>
+                  <tr class="border-t border-slate-100 dark:border-white/10">
+                    <td class="px-4 py-3">RTL QA</td>
+                    <td class="px-4 py-3">Full pass</td>
+                    <td class="px-4 py-3">Partial</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="space-y-6 rounded-3xl bg-white p-8 shadow-xl dark:bg-slate-950">
+            <div>
+              <p class="text-xs uppercase tracking-[0.3em] text-brand">Automations</p>
+              <h3 class="mt-2 text-xl font-semibold">Lifecycle composer</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Trigger onboarding content, admin alerts, and customer emails with one JSON config.</p>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 p-4 dark:border-white/10">
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-500">SDK</p>
+                <p class="text-lg font-semibold">Copy + paste</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 p-4 dark:border-white/10">
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Status</p>
+                <p class="text-lg font-semibold text-emerald-500">98.9% Uptime</p>
+              </div>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Need custom flows? Drop into the component library under `components/` and tailor cards, headers, or pricing modules.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20">
+      <div class="container mx-auto max-w-4xl text-center">
+        <p class="text-xs uppercase tracking-[0.3em] text-brand">Integrations</p>
+        <h2 class="mt-4 font-heading text-3xl font-bold">Connect with your GTM stack</h2>
+        <p class="mt-2 text-slate-500">HubSpot, Pipedrive, Notion, ClickUp, and more. Documented hooks in `assets/js/main.js`.</p>
+        <div class="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-500 sm:grid-cols-4">
+          <span class="rounded-full border border-slate-200 px-4 py-2 dark:border-white/10">HubSpot</span>
+          <span class="rounded-full border border-slate-200 px-4 py-2 dark:border-white/10">Segment</span>
+          <span class="rounded-full border border-slate-200 px-4 py-2 dark:border-white/10">Notion</span>
+          <span class="rounded-full border border-slate-200 px-4 py-2 dark:border-white/10">Linear</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-slate-200 bg-white dark:border-white/10 dark:bg-slate-950">
+    <div class="container mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-lg font-semibold">News Template</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Built with Tailwind CSS · Light + Dark · RTL ready</p>
+      </div>
+      <div class="flex gap-4 text-sm font-semibold uppercase tracking-widest text-slate-500">
+        <a href="privacy.html" class="hover:text-brand">Privacy</a>
+        <a href="terms.html" class="hover:text-brand">Terms</a>
+        <a href="admin/index.html" class="hover:text-brand">Admin</a>
+      </div>
+    </div>
+  </footer>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "News Studio",
+      "url": "https://www.example.com/",
+      "logo": "https://www.example.com/assets/icons/logo-mark.svg",
+      "sameAs": [
+        "https://www.linkedin.com/company/example",
+        "https://twitter.com/example"
+      ],
+      "areaServed": "Global",
+      "availableLanguage": ["en", "ar", "fr"]
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

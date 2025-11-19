@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story-driven demos that close faster — News</title>
+  <meta name="description" content="Learn how to align your demos with narrative beats, activation metrics, and localized copy to close faster.">
+  <link rel="canonical" href="https://www.example.com/blog-details.html">
+  <meta property="og:title" content="News — Service Experts for Modern Businesses">
+  <meta property="og:description" content="Flexible services template with light/dark modes, RTL support, and Tailwind-powered layouts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/index.html">
+  <link rel="icon" href="assets/icons/logo-mark.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#4f46e5',
+              light: '#818cf8'
+            },
+            accent: {
+              DEFAULT: '#0ea5e9'
+            }
+          },
+          fontFamily: {
+            heading: ['"Inter Tight"', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-slate-950/90">
+    <div class="container relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="flex items-center gap-2 text-lg font-semibold uppercase tracking-widest text-brand">
+        <img src="assets/icons/logo-mark.svg" alt="News logo mark" class="h-8 w-8">
+        News
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium uppercase tracking-wide md:flex">
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="blog.html">Insights</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="rounded-full bg-brand px-4 py-2 text-white shadow hover:bg-brand-light" href="pricing.html">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="toggle-btn">
+          <span class="sr-only">Toggle theme</span>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.42 1.42M7.05 16.95l-1.42 1.42m12.02 0-1.42-1.42M7.05 7.05 5.63 5.63" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+        </button>
+        <button id="mobileToggle" class="ml-1 inline-flex items-center rounded-full border border-slate-200 p-2 text-sm font-semibold md:hidden dark:border-white/10">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="absolute right-4 top-full hidden w-64 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl dark:border-white/10 dark:bg-slate-900 md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-semibold uppercase tracking-wide">
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Insights</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="rounded-full bg-brand px-4 py-2 text-center text-white" href="pricing.html">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="bg-slate-50 py-16 dark:bg-slate-900">
+      <div class="container mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-[2fr_1fr]">
+        <div class="prose prose-slate max-w-none dark:prose-invert">
+          <p class="text-xs uppercase tracking-[0.3em] text-brand">GTM Playbook</p>
+          <h1>Story-driven demos that close faster</h1>
+          <p class="text-sm text-slate-500">8 min read · Updated monthly</p>
+          <figure class="my-8">
+            <img src="https://placehold.co/900x420" alt="Demo storytelling framework diagram" class="w-full rounded-3xl border border-slate-200 dark:border-white/10">
+            <figcaption class="mt-2 text-sm text-slate-500">Narrative arcs align to awareness, evaluation, and decision stages.</figcaption>
+          </figure>
+          <p>Modern demos succeed when every touchpoint—from outbound email to onboarding article—shares the same beats. We map each demo chapter to verifiable proof and instrumentation.</p>
+          <h2>1. Anchor your why with a scorecard</h2>
+          <p>Open with a quantifiable shift. Instead of abstract mission statements, reference a scorecard row and explain why it matters. Provide a localized example: <span lang="ar" dir="rtl">“نساعد فرق المبيعات على تقليل وقت الإغلاق بنسبة ٣٥٪ دون إضافة موظفين جدد.”</span></p>
+          <h2>2. Mirror the product UI</h2>
+          <p>Use the same Tailwind components deployed in-app. This template keeps typography, padding, and iconography consistent, removing surprises when prospects convert.</p>
+          <blockquote>“After aligning our story arc with the News template, our enterprise win rate improved 19% in two quarters.” — Northwind Cloud</blockquote>
+          <h2>3. Close with an action you can measure</h2>
+          <p>Embed a CTA path that feeds directly into the admin dashboard. In this template, every CTA includes `data-cta` attributes so ops teams can track conversions without extra scripts.</p>
+          <p>Need the full checklist? Download the component snippets in the `components/` folder and remix.</p>
+        </div>
+        <aside class="space-y-6">
+          <div class="rounded-3xl border border-slate-200 p-6 dark:border-white/10">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Author</p>
+            <p class="mt-2 font-semibold">Layla Haddad</p>
+            <p class="text-sm text-slate-500">Founder & Demo Coach</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-6 dark:border-white/10">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Share</p>
+            <div class="mt-3 flex gap-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
+              <a href="#" aria-label="Share on Twitter">TW</a>
+              <a href="#" aria-label="Share on LinkedIn">IN</a>
+              <a href="#" aria-label="Share via Email">EM</a>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-6 dark:border-white/10">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Next up</p>
+            <ul class="mt-3 space-y-2 text-sm text-slate-500">
+              <li><a href="blog.html" class="text-brand">Localization QA guide</a></li>
+              <li><a href="blog.html" class="text-brand">Revenue-ops standups</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="border-t border-slate-200 bg-white dark:border-white/10 dark:bg-slate-950">
+    <div class="container mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-lg font-semibold">News Template</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Built with Tailwind CSS · Light + Dark · RTL ready</p>
+      </div>
+      <div class="flex gap-4 text-sm font-semibold uppercase tracking-widest text-slate-500">
+        <a href="privacy.html" class="hover:text-brand">Privacy</a>
+        <a href="terms.html" class="hover:text-brand">Terms</a>
+        <a href="admin/index.html" class="hover:text-brand">Admin</a>
+      </div>
+    </div>
+  </footer>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "News Studio",
+      "url": "https://www.example.com/",
+      "logo": "https://www.example.com/assets/icons/logo-mark.svg",
+      "sameAs": [
+        "https://www.linkedin.com/company/example",
+        "https://twitter.com/example"
+      ],
+      "areaServed": "Global",
+      "availableLanguage": ["en", "ar", "fr"]
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

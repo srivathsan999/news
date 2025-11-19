@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact News — Book a strategy session</title>
+  <meta name="description" content="Connect with the News team for proposals, partnerships, or support. Includes map placeholder and validated form.">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <meta property="og:title" content="News — Service Experts for Modern Businesses">
+  <meta property="og:description" content="Flexible services template with light/dark modes, RTL support, and Tailwind-powered layouts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/index.html">
+  <link rel="icon" href="assets/icons/logo-mark.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#4f46e5',
+              light: '#818cf8'
+            },
+            accent: {
+              DEFAULT: '#0ea5e9'
+            }
+          },
+          fontFamily: {
+            heading: ['"Inter Tight"', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-slate-950/90">
+    <div class="container relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="flex items-center gap-2 text-lg font-semibold uppercase tracking-widest text-brand">
+        <img src="assets/icons/logo-mark.svg" alt="News logo mark" class="h-8 w-8">
+        News
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium uppercase tracking-wide md:flex">
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="blog.html">Insights</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="rounded-full bg-brand px-4 py-2 text-white shadow hover:bg-brand-light" href="pricing.html">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="toggle-btn">
+          <span class="sr-only">Toggle theme</span>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.42 1.42M7.05 16.95l-1.42 1.42m12.02 0-1.42-1.42M7.05 7.05 5.63 5.63" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+        </button>
+        <button id="mobileToggle" class="ml-1 inline-flex items-center rounded-full border border-slate-200 p-2 text-sm font-semibold md:hidden dark:border-white/10">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="absolute right-4 top-full hidden w-64 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl dark:border-white/10 dark:bg-slate-900 md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-semibold uppercase tracking-wide">
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Insights</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="rounded-full bg-brand px-4 py-2 text-center text-white" href="pricing.html">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="bg-slate-50 py-16 dark:bg-slate-900">
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="text-center">
+          <p class="inline-flex items-center rounded-full border border-brand/30 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-brand">Let’s talk</p>
+          <h1 class="mt-4 font-heading text-4xl font-bold">Book a strategy session or ask for support</h1>
+          <p class="mt-4 text-base text-slate-500 dark:text-slate-300">We reply within one business day. Prefer Arabic or French? Mention it in the form and we’ll match you with a native speaker.</p>
+        </div>
+        <div class="mt-12 grid gap-10 lg:grid-cols-2 rtl-flip">
+          <form id="contactForm" class="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-xl dark:border-white/10 dark:bg-slate-950" novalidate>
+            <div>
+              <label for="name" class="form-label">Full name</label>
+              <input id="name" name="name" type="text" required class="form-input" placeholder="Layla Haddad">
+            </div>
+            <div>
+              <label for="email" class="form-label">Work email</label>
+              <input id="email" name="email" type="email" required class="form-input" placeholder="you@company.com">
+            </div>
+            <div>
+              <label for="company" class="form-label">Company</label>
+              <input id="company" name="company" type="text" class="form-input" placeholder="Northwind Cloud">
+            </div>
+            <div>
+              <label for="message" class="form-label">Project notes</label>
+              <textarea id="message" name="message" rows="4" required class="form-input" placeholder="What are you building?"></textarea>
+            </div>
+            <div class="flex items-center gap-3">
+              <input id="newsletter" name="newsletter" type="checkbox" class="h-4 w-4 rounded border-slate-300 text-brand focus:ring-brand">
+              <label for="newsletter" class="text-sm text-slate-500">Send me the monthly digest (EN + AR)</label>
+            </div>
+            <button type="submit" class="w-full rounded-full bg-brand px-6 py-3 font-semibold text-white">Send request</button>
+            <p id="formMessage" class="text-sm text-emerald-500" role="status" aria-live="polite"></p>
+          </form>
+          <div class="space-y-6">
+            <div class="rounded-3xl border border-dashed border-slate-300 p-8 text-center dark:border-white/20">
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Map placeholder</p>
+              <p class="mt-4 text-lg font-semibold">Embed your map, video, or custom illustration here.</p>
+              <p class="mt-2 text-sm text-slate-500">No API keys included — swap with your preferred provider.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 p-8 dark:border-white/10">
+              <p class="text-xs uppercase tracking-[0.3em] text-brand">Offices</p>
+              <p class="mt-2 text-sm text-slate-500">Remote-first across Dubai, Lisbon, Toronto, and Mexico City.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.3em] text-brand">Support</p>
+              <a href="mailto:hello@example.com" class="text-brand">hello@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto max-w-5xl px-4">
+        <div class="rounded-3xl border border-slate-200 p-8 dark:border-white/10">
+          <p class="text-xs uppercase tracking-[0.3em] text-brand">Turnaround</p>
+          <div class="mt-4 grid gap-6 md:grid-cols-3">
+            <div>
+              <p class="text-4xl font-bold text-brand">24h</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Average reply</p>
+            </div>
+            <div>
+              <p class="text-4xl font-bold text-brand">2</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Languages offered</p>
+            </div>
+            <div>
+              <p class="text-4xl font-bold text-brand">3</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Ways to connect</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-slate-200 bg-white dark:border-white/10 dark:bg-slate-950">
+    <div class="container mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-lg font-semibold">News Template</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Built with Tailwind CSS · Light + Dark · RTL ready</p>
+      </div>
+      <div class="flex gap-4 text-sm font-semibold uppercase tracking-widest text-slate-500">
+        <a href="privacy.html" class="hover:text-brand">Privacy</a>
+        <a href="terms.html" class="hover:text-brand">Terms</a>
+        <a href="admin/index.html" class="hover:text-brand">Admin</a>
+      </div>
+    </div>
+  </footer>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "News Studio",
+      "url": "https://www.example.com/",
+      "logo": "https://www.example.com/assets/icons/logo-mark.svg",
+      "sameAs": [
+        "https://www.linkedin.com/company/example",
+        "https://twitter.com/example"
+      ],
+      "areaServed": "Global",
+      "availableLanguage": ["en", "ar", "fr"]
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

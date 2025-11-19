@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Detail — Product launchpad</title>
+  <meta name="description" content="Deep dive into the News Product Launchpad: scope, deliverables, FAQs, and pricing for teams shipping marketing + product experiences together.">
+  <link rel="canonical" href="https://www.example.com/service-details.html">
+  <meta property="og:title" content="News — Service Experts for Modern Businesses">
+  <meta property="og:description" content="Flexible services template with light/dark modes, RTL support, and Tailwind-powered layouts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/index.html">
+  <link rel="icon" href="assets/icons/logo-mark.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#4f46e5',
+              light: '#818cf8'
+            },
+            accent: {
+              DEFAULT: '#0ea5e9'
+            }
+          },
+          fontFamily: {
+            heading: ['"Inter Tight"', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-slate-950/90">
+    <div class="container relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="flex items-center gap-2 text-lg font-semibold uppercase tracking-widest text-brand">
+        <img src="assets/icons/logo-mark.svg" alt="News logo mark" class="h-8 w-8">
+        News
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium uppercase tracking-wide md:flex">
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="blog.html">Insights</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="rounded-full bg-brand px-4 py-2 text-white shadow hover:bg-brand-light" href="pricing.html">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="toggle-btn">
+          <span class="sr-only">Toggle theme</span>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.42 1.42M7.05 16.95l-1.42 1.42m12.02 0-1.42-1.42M7.05 7.05 5.63 5.63" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+        </button>
+        <button id="mobileToggle" class="ml-1 inline-flex items-center rounded-full border border-slate-200 p-2 text-sm font-semibold md:hidden dark:border-white/10">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="absolute right-4 top-full hidden w-64 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl dark:border-white/10 dark:bg-slate-900 md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-semibold uppercase tracking-wide">
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Insights</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="rounded-full bg-brand px-4 py-2 text-center text-white" href="pricing.html">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="bg-slate-50 py-16 dark:bg-slate-900">
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-center">
+          <div class="space-y-4">
+            <p class="badge inline-flex">Signature service</p>
+            <h1 class="font-heading text-4xl font-bold">Product Launchpad</h1>
+            <p class="text-slate-600 dark:text-slate-300">Give GTM, product, and support the same design language. Launchpad bundles marketing site, onboarding flows, admin dashboards, and RTL-ready components.</p>
+            <div class="flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-slate-500">
+              <span class="badge">6-week sprint</span>
+              <span class="badge">Hybrid team</span>
+              <span class="badge">EN + AR</span>
+            </div>
+          </div>
+          <div class="flex-1 rounded-3xl bg-white p-8 shadow-xl dark:bg-slate-950">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Outcome</p>
+            <ul class="mt-4 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+              <li>• Story + IA mapped to shared KPIs</li>
+              <li>• Marketing + product UI parity</li>
+              <li>• Admin analytics shell, dark/RTL ready</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto max-w-6xl px-4">
+        <div class="grid gap-8 lg:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 p-6 dark:border-white/10">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Phase 1</p>
+            <h3 class="mt-2 text-xl font-semibold">Strategy intensive</h3>
+            <p class="mt-2 text-sm text-slate-500">Customer interviews, data audit, and service blueprinting (English + Arabic summary).</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-6 dark:border-white/10">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Phase 2</p>
+            <h3 class="mt-2 text-xl font-semibold">Design & build</h3>
+            <p class="mt-2 text-sm text-slate-500">Tailwind components, pricing toggles, blog filter, and admin analytics cards.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-6 dark:border-white/10">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Phase 3</p>
+            <h3 class="mt-2 text-xl font-semibold">Enablement</h3>
+            <p class="mt-2 text-sm text-slate-500">Video walkthroughs, documentation, localization QA, and testing checklist.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-900 py-16 text-white">
+      <div class="container mx-auto max-w-5xl px-4">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-brand-light">FAQs</p>
+            <h2 class="mt-4 font-heading text-3xl font-bold">Your questions answered</h2>
+          </div>
+          <div class="space-y-4">
+            <details class="faq">
+              <summary>How does RTL support work?</summary>
+              <p>We duplicate key templates with `dir="rtl"` and verify mirrored spacing, icons, and typography with native reviewers.</p>
+            </details>
+            <details class="faq">
+              <summary>Can we bring our own CMS?</summary>
+              <p>Yes. The HTML is CMS-agnostic and uses semantic markup that maps easily into headless systems.</p>
+            </details>
+            <details class="faq">
+              <summary>ما هي المخرجات الرئيسية؟</summary>
+              <p>تحصل على مكتبة مكونات، صفحات HTML جاهزة، ودليل تمكين باللغة الإنجليزية + العربية.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto max-w-5xl px-4">
+        <div class="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-white/70">
+              <tr>
+                <th class="px-4 py-3">Deliverable</th>
+                <th class="px-4 py-3">Details</th>
+                <th class="px-4 py-3">Owner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-slate-100 dark:border-white/5">
+                <td class="px-4 py-3 font-semibold">Experience map</td>
+                <td class="px-4 py-3">Cross-touchpoint blueprint with KPIs + tooling notes</td>
+                <td class="px-4 py-3">Strategy</td>
+              </tr>
+              <tr class="border-t border-slate-100 dark:border-white/5">
+                <td class="px-4 py-3 font-semibold">Component kit</td>
+                <td class="px-4 py-3">Tailwind UI tokens, card variations, nav, modals</td>
+                <td class="px-4 py-3">Product</td>
+              </tr>
+              <tr class="border-t border-slate-100 dark:border-white/5">
+                <td class="px-4 py-3 font-semibold">Admin dashboard</td>
+                <td class="px-4 py-3">Analytics, users, orders, and messaging pages</td>
+                <td class="px-4 py-3">Ops</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto max-w-4xl rounded-3xl bg-white p-8 shadow-xl dark:bg-slate-950">
+        <div class="grid gap-8 md:grid-cols-2">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-brand">Pricing</p>
+            <h3 class="text-3xl font-semibold">$18,500</h3>
+            <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">One-time fee · 6-week delivery · Includes two iteration rounds.</p>
+          </div>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+            <li>✔ Dedicated producer + Slack channel</li>
+            <li>✔ QA across Chrome, Safari, Firefox</li>
+            <li>✔ LocalStorage-powered theme & RTL toggles</li>
+            <li>✔ Contact + blog JS interactions</li>
+          </ul>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="pricing.html" class="rounded-full bg-brand px-6 py-3 font-semibold text-white">Compare plans</a>
+          <a href="contact.html" class="rounded-full border border-slate-200 px-6 py-3 font-semibold dark:border-white/20">Request proposal</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-slate-200 bg-white dark:border-white/10 dark:bg-slate-950">
+    <div class="container mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-lg font-semibold">News Template</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Built with Tailwind CSS · Light + Dark · RTL ready</p>
+      </div>
+      <div class="flex gap-4 text-sm font-semibold uppercase tracking-widest text-slate-500">
+        <a href="privacy.html" class="hover:text-brand">Privacy</a>
+        <a href="terms.html" class="hover:text-brand">Terms</a>
+        <a href="admin/index.html" class="hover:text-brand">Admin</a>
+      </div>
+    </div>
+  </footer>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Product Launchpad",
+      "provider": {
+        "@type": "Organization",
+        "name": "News Studio",
+        "url": "https://www.example.com/"
+      },
+      "areaServed": "Global",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "18500",
+        "availability": "https://schema.org/InStock"
+      },
+      "availableLanguage": ["en", "ar"],
+      "description": "Product Launchpad ships marketing sites, onboarding flows, and admin dashboards with RTL + dark mode."
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
